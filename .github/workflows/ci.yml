@@ -25,13 +25,16 @@ jobs:
       # Uncomment this line to enable task distribution
       # - run: npx nx start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="build"
 
+      # Enable corepack to use pnpm version from package.json
+      - run: corepack enable
+
       # Cache node_modules
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: 'pnpm'
 
-      - run: npm ci --legacy-peer-deps
+      - run: pnpm install --frozen-lockfile
 
       # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
       # - run: npx nx-cloud record -- echo Hello World

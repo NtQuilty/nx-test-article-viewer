@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(() => ({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/react-demo',
+  cacheDir: '../../node_modules/.vite/apps/article-viewer',
   server: {
     port: 4200,
     host: 'localhost',
@@ -27,7 +27,7 @@ export default defineConfig(() => ({
     },
   },
   test: {
-    name: '@react-demo/react-demo',
+    name: '@react-demo/article-viewer',
     watch: false,
     globals: true,
     environment: 'jsdom',

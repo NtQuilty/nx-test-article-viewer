@@ -4,7 +4,7 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/react-demo"
+      "path": "./apps/article-viewer"
     }
   ]
 }
