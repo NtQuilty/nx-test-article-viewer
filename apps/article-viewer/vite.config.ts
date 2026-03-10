@@ -30,6 +30,8 @@ export default defineConfig(() => ({
     name: '@react-demo/article-viewer',
     watch: false,
     globals: true,
+    // DELETE: Удалить когда будут добавлены тесты
+    passWithNoTests: true,
     environment: 'jsdom',
     include: ['{src,tests}/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     reporters: ['default'],
