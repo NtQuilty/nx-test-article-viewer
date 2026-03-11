@@ -1,0 +1,15 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      run: CI=true pnpm nx affected -t lint
+    typecheck:
+      run: CI=true pnpm nx affected -t typecheck
+
+pre-push:
+  parallel: true
+  commands:
+    test:
+      run: CI=true pnpm nx affected -t test
+    build:
+      run: CI=true pnpm nx affected -t build

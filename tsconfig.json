@@ -5,6 +5,18 @@
   "references": [
     {
       "path": "./apps/article-viewer"
+    },
+    {
+      "path": "./packages/articles/data-access"
+    },
+    {
+      "path": "./packages/shared/api-client"
+    },
+    {
+      "path": "./packages/shared/router"
+    },
+    {
+      "path": "./packages/shared/ui"
     }
   ]
 }
