@@ -9,9 +9,7 @@
     "preview:article-viewer": "pnpm nx run article-viewer:preview",
     "test:article-viewer": "pnpm nx run article-viewer:test",
     "lint:article-viewer": "pnpm nx run article-viewer:lint",
-
     "format": "prettier --write .",
-    
     "graph": "nx graph",
     "knip": "knip",
     "openapi-ts": "openapi-ts"
